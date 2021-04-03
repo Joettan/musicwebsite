@@ -22,13 +22,17 @@ public class HelloWorldController {
 
     @ApiOperation("HelloWorld")
     @RequestMapping(value = {"/{Name}"},method = RequestMethod.GET)
-    public String HelloWorld(@PathVariable("Name")String name){
+    public String helloWorld(@PathVariable("Name")String name){
         logger.info("HelloWorld"+name);
         return "HelloWorld"+name;
     }
     @RequestMapping(value = {""},method = RequestMethod.GET)
-    public String HelloWorld(){
+    public String helloWorld(){
         logger.info("HelloWorld");
         return "HelloWorld";
+    }
+    @RequestMapping(value ="/close",method = RequestMethod.GET)
+    public void closeSystem(){
+        System.exit(0);
     }
 }
