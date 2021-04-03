@@ -1,0 +1,7 @@
+Spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: foo
+    password: bar
+    driverClassName: oracle.jdbc.OracleDriver
