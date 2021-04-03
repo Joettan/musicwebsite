@@ -5,3 +5,5 @@ Spring:
     username: foo
     password: bar
     driverClassName: oracle.jdbc.OracleDriver
+server:
+  port: 80
